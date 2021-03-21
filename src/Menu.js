@@ -10,7 +10,7 @@ export default function Menu() {
     return window.location.replace("/Productos")
   }
 
-  if(window.innerWidth<=1100){
+  if(size.width<=1100){
 
     return <>
     <SwipeableTemporaryDrawer/>
