@@ -1,6 +1,7 @@
 import React from "react"
 import Menu from "../Menu"
 import {Helmet} from "react-helmet";
+import Slider from "../component/Slider"
 export default function Home() {
   return <>
     <Helmet>
@@ -16,6 +17,7 @@ export default function Home() {
     `}</style>
     </Helmet>
     <Menu />
+      <Slider />
 
   </>
 }
