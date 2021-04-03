@@ -1,29 +1,35 @@
-import React from 'react'
-import Whirligig from 'react-whirligig'
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-const Slider = () => {
-  let whirligig
-  const next = () => whirligig.next()
-  const prev = () => whirligig.prev()
-  //TODO cambiar las imagenes
-  return (
-    <div>
-      <button onClick={prev}>Prev</button>
-      <Whirligig
-        visibleSlides={1}
-        gutter="1em"
-        ref={(_whirligigInstance) => { whirligig = _whirligigInstance}}
-      >
+import { Carousel } from 'react-responsive-carousel';
 
-        <img src="http://www.fillmurray.com/400/300" />
-        <img src="http://www.fillmurray.com/300/400" />
-        <img src="http://www.fillmurray.com/400/200" />
-        <img src="http://www.fillmurray.com/200/400" />
-        <img src="http://www.fillmurray.com/500/300" />
-      </Whirligig>
-      <button onClick={next}>Next</button>
-    </div>
-  )
+class Slider extends Component {
+
+  render() {
+    return (
+      <div style={{height:"40vh", width:"40vw", marginLeft:"30vw"}}>
+      <Carousel width="100%"  infiniteLoop
+                showThumbs="false"
+                autoPlay="true"
+                transitionTime="500"
+                >
+        <div>
+          <img src="http://www.fillmurray.com/400/300" />
+
+        </div>
+        <div>
+          <img src="http://www.fillmurray.com/400/300" />
+
+        </div>
+        <div>
+          <img src="http://www.fillmurray.com/400/200" />
+
+        </div>
+      </Carousel>
+      </div>
+    );
+  }
 }
 
 export default Slider

@@ -1,7 +1,8 @@
 import React from "react"
-import Menu from "../Menu"
+import Menu from "../component/Menu"
 import {Helmet} from "react-helmet";
 import { Card, CardActionArea, CardContent, CardMedia, Grid, makeStyles, Typography } from "@material-ui/core"
+import Header from "../component/Header"
 export default function Productos() {
 
   var productos={
@@ -318,13 +319,15 @@ export default function Productos() {
             width:100%;
             margin:0
         }
-      
+       a{
+        text-decoration:none;
+        color:white}
         .MuiCardMedia-img {
    object-fit:fill
 }
     `}</style>
     </Helmet>
-
+    <Header />
     <Menu />
     <p>Menu de productos</p>
     {
