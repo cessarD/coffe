@@ -19,11 +19,12 @@ export default function Menu() {
   }else{
     return <>
       <AppBar position="static" style={{width:"100%"}}>
-        <Tabs aria-label="simple tabs example" centered>
-          <Tab component="a"  label={<Link to="/">Inicio</Link>} href="coffe/"  />
-          <Tab component="a"  label={<Link to="/Productos">Menu</Link>} href="coffe/Productos"  />
 
-          <Tab component="a"  label={<Link to="/Informacion">Acerca de</Link>} href="coffe/Informacion"  />
+        <Tabs aria-label="simple tabs example" centered>
+          <Tab component="a"  label={<Link to="/">Inicio</Link>}   />
+          <Tab component="a"  label={<Link to="/Productos">Menu</Link>}  />
+
+          <Tab component="a"  label={<Link to="/Informacion">Acerca de</Link>}  />
 
         </Tabs>
       </AppBar>

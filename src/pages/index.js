@@ -8,6 +8,7 @@ import LocalCafeIcon from '@material-ui/icons/LocalCafe';
 import CloudIcon from '@material-ui/icons/Cloud';
 import EcoIcon from '@material-ui/icons/Eco';
 import StarRateIcon from '@material-ui/icons/StarRate';
+import Footer from "../component/Footer"
 export default function Home() {
   return <>
     <Helmet>
@@ -57,8 +58,9 @@ export default function Home() {
 
 
       </Grid>
-
+  <div style={{display:"flex", "flex-direction":"column"}}>
     <Slider />
-
+    <Footer/>
+  </div>
   </>
 }

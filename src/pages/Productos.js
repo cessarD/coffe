@@ -3,6 +3,7 @@ import Menu from "../component/Menu"
 import {Helmet} from "react-helmet";
 import { Card, CardActionArea, CardContent, CardMedia, Grid, makeStyles, Typography } from "@material-ui/core"
 import Header from "../component/Header"
+import Footer from "../component/Footer"
 export default function Productos() {
 
   var productos={
@@ -380,6 +381,6 @@ export default function Productos() {
       )
     }
 
-
+    <Footer/>
   </>
 }

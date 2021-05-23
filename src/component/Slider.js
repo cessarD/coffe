@@ -8,7 +8,7 @@ class Slider extends Component {
 
   render() {
     return (
-      <div style={{height:"40vh", width:"40vw", marginLeft:"30vw"}}>
+      <div style={{height:"100%", width:"40vw", marginLeft:"30vw"}}>
       <Carousel width="100%"  infiniteLoop
                 showThumbs="false"
                 autoPlay="true"
